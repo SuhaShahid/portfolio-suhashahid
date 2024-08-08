@@ -1,14 +1,85 @@
-body{
+/* body{
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: whitesmoke;
-}
+} */
+ form{
+    height: 75%;
+    background: white;
+    display: inline-block;
+    width: 75%;
+    text-align: center;
+ }
 .contact-sec{
-    background: whitesmoke;
     display: flex;
     height: 100vh;
     width: 100%;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
+}
+.contact-sec h1{
+    padding: 15px 0 0 0;
+}
+.form-info{
+    align-content: center;
+    justify-items: center;
+    margin: 10px 40px;
+    /* padding: 10px; */
+    background-color: rgb(255, 255, 255);
+    height: 65%;
+}
+
+.name , .contactinfo, .msg{
+    padding: 10px;
+    margin: 10px;
+}
+
+input[type="text"] ,
+input[type="email"],
+input[type="number"]  {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 40px;
+    width: 240px;
+    padding: 7px;
+    font-weight: 400;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus
+{
+    outline: 0;
+    box-shadow: 2px #b9d3fa;
+    border: 1px solid #86b7fe
+}
+textarea{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    width: auto;
+    max-width: 500px;
+    max-height: 70px;
+    min-width: 495px;
+    min-height: 60px;
+    padding: 5px;
+    outline: 0;
+    box-shadow: 2px #b9d3fa;
+    border: 1px solid #86b7fe
+}
+button{
+    /* width: 175px;
+    height: 42px;
+    border-radius: 3px;
+    outline: 0; */
+    background-color: #a9a9f4;
+    color: white;
+    width: 200px;
+    height: 45px;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 0 30px;
 }

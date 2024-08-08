@@ -1,9 +1,9 @@
-body{
+/* body{
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: whitesmoke;
-}
+    background: rgb(180, 158, 158);
+} */
 .service{
     height: 100vh;
     width: 100%;
@@ -17,11 +17,12 @@ body{
     justify-content: center;
     text-align: center;
     padding: 10px 20px;
-    gap: 20px;
+    gap: 40px;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .box{
-    display: flex;
+    align-content: center;
     height: 150px;
     width: 200px;
     gap: 20px;
@@ -33,4 +34,13 @@ body{
 }
 .box p{
     padding: 0.1rem;
+}
+/* .box:hover{
+    color: antiquewhite;
+} */
+i{
+    display: block;
+    font-size: 25px;
+    color: rgb(105, 141, 214);
+    font-weight: 800;
 }
