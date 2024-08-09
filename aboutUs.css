@@ -1,16 +1,17 @@
 
 .aboutUs{
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     align-content: center;
     flex-direction: row;
-    
+    padding: 10px;
 }
+
 .imageUser{
     align-content: center;
-    padding: 5%;
-    height: 450px;
+    /* padding: 5%; */
+    height: 400px;
     width: 350px;
 }
 #profilePic{
@@ -20,11 +21,12 @@
 }
 .about{
     align-content: center;
-    padding:0 3%;
+    padding:0 2%;
+    margin: 0;
 }
 .about h1{
     font-size: 40px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .about p{
 margin: 1px;
@@ -32,7 +34,8 @@ margin: 1px;
 }
 .two-col{
     display: flex;
-    gap: 120px;
+    gap: 100px;
+    
 }
 .col-one{
     padding: 0;
@@ -65,45 +68,95 @@ i{
     border-radius: 3px;
     padding: 0 30px;
 }
-
-@media screen and (min-width:320px) and (max-width:600px){
-    .aboutUs{
-        flex-direction: column;   
-
-    }
-    .imageUser{
-        flex-direction: column;
-        white-space-collapse: collapse;
-    }
-    /* .about h1{
-        font-size: 30px;
-        text-wrap: wrap;
-    }
-    .about p{
-        text-align: justify;
-        text-wrap: wrap;
-    } */
-
+#download:hover{
+    background-color: #8b8bf8;
 }
 
-/* @media screen and (min-width:601px) and (max-width:1020px) {
-    .about-section{
-        flex-direction: row;   
-        align-content: center;
-    }
-    .about h1{
-        font-size: 30px;
-    }
 
-    .imageUser{
-        align-content: center;
-        padding: 5%;
-        height: 350px;
+
+@media screen and (max-width: 600px) {
+    .aboutUs {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .imageUser, .about {
+        width: 100%;
+        text-align: center;
+    }
+    .imageUser {
+        padding: 0;
+    }
+    #profilePic {
+        height: 250px;
         width: 250px;
     }
-    #profilePic{
-        align-content: center;
-        height: 350px;
-        width: 250px;
+    .about h1 {
+        font-size: 28px;
     }
-} */
+    .two-col {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .col-one, .col-two {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .aboutUs {
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+    #profilePic {
+        height: 350px;
+        width: 350px;
+    }
+    .about h1 {
+        font-size: 32px;
+    }
+    .two-col {
+        gap: 80px;
+    }
+    .col-one, .col-two {
+        padding: 0 20px;
+    }
+}
+@media screen and (min-width: 1025px)  {
+    .aboutUs {
+        padding: 30px;
+    }
+    #profilePic {
+        height: 400px;
+        width: 350px;
+    }
+    .about h1 {
+        font-size: 36px;
+    }
+    .two-col {
+        gap: 100px;
+    }
+    .col-one, .col-two {
+        padding: 0 30px;
+    }
+}
+
+/* @media screen and (min-width: 1441px) {
+    .aboutUs {
+        padding: 40px;
+    }
+    #profilePic {
+        height: 450px;
+        width: 400px;
+    }
+    .about h1 {
+        font-size: 40px;
+    }
+    .two-col {
+        gap: 120px;
+    }
+    .col-one, .col-two {
+        padding: 0 50px;
+    }
+}  */

@@ -1,87 +1,169 @@
-body{
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* background-color: rgb(180, 158, 158); */
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100vw;
 }
-section{
-    /* background-color: rgb(158 190 218 / 50%)
-     */
-     background-color: whitesmoke;
-}
-.frontPage{
+
+.frontPage {
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    padding: 10px;
     align-content: center;
     font-family: serif;
     flex-direction: row;
 }
-.info{
-    padding: 0 10%;
+
+.info {
+    padding: 0 4%;
     align-content: center;
-    text-wrap: wrap;
-    row-gap: 2px;
 }
-.privInfo h4{
+
+.privInfo h4 {
     color: rgb(105, 141, 214);
     font-size: 25px;
 }
-.privInfo h1{
-    text-wrap: wrap;
+
+.privInfo h1 {
     font-size: 40px;
 }
 
-button{
+button {
+    cursor: pointer;
     width: 100px;
     border-radius: 3px;
     outline: 0;
-    
+    margin-right: 0.4rem;
 }
-#btn-one{
+
+#btn-one {
     background-color: black;
     color: white;
     padding: 10px;
     outline: black;
 }
-#btn-two{
+
+#btn-two {
     background-color: white;
     color: black;
     padding: 10px;
     outline: white;
 }
 
-.frontImage{
+/* #btn-one:hover{
+    background-color: rgb(216, 215, 215);
+    color: black;
+}
+#btn-two:hover{
+    background-color: rgb(118, 118, 118);
+    color: white;
+} */
+
+.frontImage {
     align-content: center;
 }
-#frontPageUser{
-    height: 400px;
-    width: 400px;
-}
-#pfpbg{
-    height: 400px;
-    width: 400px;
+
+#frontPageUser, #pfpbg {
+    /* padding: 2%; */
+    height: 350px;
+    width: 350px;
 }
 
-@media screen and (min-width:320px) and (max-width:600px){
-    .frontPage{
-        flex-direction: column;   
+
+
+
+@media screen and (max-width: 600px) {
+    .frontPage {
+        flex-direction: column;
+        padding: 10px;
+        align-content: center;
+    }
+    .privInfo{
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+    }
+    .privInfo h4 {
+        font-size: 14px;
+    }
+    .privInfo h1 {
+        font-size: 24px;
+    }
+    #btn-one, #btn-two {
+        width: 90%;
+        margin: 5px 0;
+    }
+   
+    #frontPageUser, #pfpbg {
+        height: 250px;
+        width: 250px;
+    }
+    .button{
+        width: 200px;
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
     }
 }
 
-@media screen and (min-width:601px) and (max-width:1020px) {
-    .frontPage{
-        flex-direction: row;   
-        align-content: center;
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .frontPage {
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
     }
-    .privInfo h4{
-        color: rgb(105, 141, 214);
-        font-size: 25px;
+    .privInfo h4 {
+        font-size: 22px;
     }
-    .privInfo h1{
-        font-size: 35px;
+    .privInfo h1 {
+        font-size: 36px;
     }
-    .frontImage{
-        align-content: center;
+    #btn-one, #btn-two {
+        width: 150px;
+    }
+    #frontPageUser, #pfpbg {
+        height: 300px;
+        width: 300px;
+    }
+    .button{
+        justify-content: left;
+    }
+    span{
+        justify-content: left;
+        /* text-align: center; */
     }
 }
+
+
+@media screen and (min-width: 1025px) and (max-width: 1921px) {
+    .frontPage {
+        flex-direction: row;
+        align-items: center;
+        padding: 1%;
+        margin: 0;
+    }
+    .privInfo h4 {
+        font-size: 24px;
+    }
+    .privInfo h1 {
+        font-size: 38px;
+    }
+    #btn-one, #btn-two {
+        width: 180px;
+    }
+    span{
+        justify-content: left;
+        text-align: center;
+    }
+    #frontPageUser, #pfpbg {
+        height: 350px;
+        width: 350px;
+        padding: 0;
+    }
+}
+

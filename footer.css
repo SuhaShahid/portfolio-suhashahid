@@ -1,0 +1,150 @@
+.footer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap; 
+    padding: 10px; 
+}
+
+.col {
+    padding: 0px 15px;
+    margin: 20px;
+    width: 200px;
+    list-style: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.col-one {
+    padding: 1px 15px;
+    margin: 20px;
+    width: 260px;
+    text-align: justify;
+}
+
+.col-four {
+    padding: 1px 15px;
+    margin: 20px;
+    width: 260px;
+}
+
+.footer-p {
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.icons {
+    display: flex;
+}
+
+#icons {
+    font-size: 25px;
+    color: white;
+    padding: 12px 10px;
+}
+
+span {
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    .col, .col-one, .col-four {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .icons {
+        justify-content: center;
+    }
+    #icons {
+        font-size: 20px;
+    }
+    span {
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .footer {
+        flex-direction: column;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .col-one , .col-four{
+        width: 40%;
+        margin: 15px auto;
+        text-align: center;
+    }
+    .col {
+        width: 30%;
+        margin: 15px auto;
+        text-align: center;
+    }
+    .icons {
+        justify-content: center;
+    }
+    #icons {
+        font-size: 22px;
+    }
+    span {
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
+    .footer footer {
+        flex-direction: row;
+        background-color: black;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .col-one , .col-four{
+        width: 25%;
+        margin: 0;
+        padding: 0 2%;
+        text-align: left;
+        font-size: 16px;
+    }
+    .col {
+        width: 15%;
+        margin: 0;
+        text-align: left;
+    }
+    .icons {
+        justify-content: flex-start;
+    }
+    #icons {
+        font-size: 24px;
+    }
+    span {
+        justify-content: flex-start;
+    }
+}
+
+
+

@@ -10,15 +10,18 @@
     display: inline-block;
     width: 75%;
     text-align: center;
+    padding: 20px; 
  }
 .contact-sec{
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    padding: 10px;
 }
+
 .contact-sec h1{
     padding: 15px 0 0 0;
 }
@@ -27,8 +30,8 @@
     justify-items: center;
     margin: 10px 40px;
     /* padding: 10px; */
-    background-color: rgb(255, 255, 255);
-    height: 65%;
+    background: rgb(255, 255, 255 / 53%);
+    height: 60%;
 }
 
 .name , .contactinfo, .msg{
@@ -38,7 +41,7 @@
 
 input[type="text"] ,
 input[type="email"],
-input[type="number"]  {
+input[type="tel"]  {
     border: 1px solid #ccc;
     border-radius: 6px;
     height: 40px;
@@ -49,7 +52,7 @@ input[type="number"]  {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="number"]:focus
+input[type="tel"]:focus
 {
     outline: 0;
     box-shadow: 2px #b9d3fa;
@@ -60,21 +63,17 @@ textarea{
     border-radius: 6px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
-    width: auto;
+    /* width: auto;
     max-width: 500px;
-    max-height: 70px;
-    min-width: 495px;
+    min-width: 495px; */
     min-height: 60px;
+    max-height: 70px;
     padding: 5px;
     outline: 0;
     box-shadow: 2px #b9d3fa;
-    border: 1px solid #86b7fe
+    border: 1px solid #000000
 }
-button{
-    /* width: 175px;
-    height: 42px;
-    border-radius: 3px;
-    outline: 0; */
+#btn-submit{
     background-color: #a9a9f4;
     color: white;
     width: 200px;
@@ -82,4 +81,49 @@ button{
     font-size: 14px;
     border-radius: 3px;
     padding: 0 30px;
+}
+#btn-submit:hover{
+    background-color: #8b8bf8;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-sec {
+        flex-direction: column;
+        padding: 10px;
+    }
+    form {
+        width: 90%;
+        
+    }
+    .form-info {
+        margin: 10px 0;
+    }
+    input[type="text"] ,
+    input[type="email"],
+    input[type="number"]  {
+        text-align: center;
+        margin: 10px;
+    }
+    textarea {
+        max-width: 90%;
+        min-width: 90%;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    form {
+        width: 80%;
+    }
+    textarea {
+        max-width: 80%;
+        min-width: 80%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    form {
+        width: 70%;
+    }
+    textarea {
+        max-width: 65%;
+        min-width: 65%;
+    }
 }
