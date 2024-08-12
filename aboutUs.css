@@ -5,28 +5,36 @@
     width: 100%;
     align-content: center;
     flex-direction: row;
-    padding: 10px;
+    /* padding: 10px; */
+    /* background-color: rgb(160, 200, 236); */
 }
-
+.about-section  {
+    background-color: aliceblue;
+}
 .imageUser{
     align-content: center;
-    /* padding: 5%; */
-    height: 400px;
+    height: 350px;
     width: 350px;
+    padding: 5px;
 }
 #profilePic{
     align-content: center;
-    height: 450px;
+    height: 350px;
     width: 350px;
+    padding: 5px;
 }
 .about{
     align-content: center;
-    padding:0 2%;
+    padding: 10px 40px;
     margin: 0;
+
 }
 .about h1{
-    font-size: 40px;
+    font-size: 45px;
     margin-top: 5px;
+}
+.about h4{
+    font-size: 30px;
 }
 .about p{
 margin: 1px;
@@ -37,7 +45,7 @@ margin: 1px;
     gap: 100px;
     
 }
-.col-one{
+.one-col{
     padding: 0;
     display: inline;
     flex-direction: row;
@@ -57,7 +65,9 @@ i{
     color: rgb(105, 141, 214);
 }
 .btn-download{    
-    margin-top: 15px;
+    padding: 15px;
+    text-align: center;
+    display: block;
 }
 #download{
     background-color: #a9a9f4;
@@ -66,7 +76,8 @@ i{
     height: 45px;
     font-size: 14px;
     border-radius: 3px;
-    padding: 0 30px;
+    /* padding: 0 30px; */
+    margin: 10px 0 0 5px;
 }
 #download:hover{
     background-color: #8b8bf8;
@@ -77,7 +88,12 @@ i{
 @media screen and (max-width: 600px) {
     .aboutUs {
         flex-direction: column;
-        padding: 10px;
+        /* padding: 10px; */
+    }
+    .about{
+        align-content: center;
+        padding:0;
+        margin: 0;
     }
     .imageUser, .about {
         width: 100%;
@@ -90,16 +106,40 @@ i{
         height: 250px;
         width: 250px;
     }
+    .heading{
+        padding: 0;
+        margin: 0%;
+    }
     .about h1 {
-        font-size: 28px;
+        font-size: 24px;
+    }
+    /* .about h1{
+        font-size: 45px;
+        margin-top: 5px;
+    } */
+    .about h4{
+        font-size: 18px;
+    }
+    .about p{
+        font-size: 14px;
     }
     .two-col {
         flex-direction: column;
         gap: 20px;
         align-items: center;
     }
-    .col-one, .col-two {
+    .one-col, .col-two {
         text-align: center;
+        font-size: 14px;
+    }
+    i{
+        color: rgb(105, 141, 214);
+    }
+    #download{
+        width: 150px;
+    }
+    #download:hover {
+        background-color: #8b8bf8;
     }
 }
 
@@ -107,7 +147,7 @@ i{
     .aboutUs {
         flex-direction: row;
         align-items: center;
-        padding: 20px;
+        /* padding: 20px; */
     }
     #profilePic {
         height: 350px;
@@ -122,13 +162,16 @@ i{
     .col-one, .col-two {
         padding: 0 20px;
     }
+    #download:hover {
+        background-color: #8b8bf8;
+    }
 }
 @media screen and (min-width: 1025px)  {
-    .aboutUs {
+    /* .aboutUs {
         padding: 30px;
-    }
+    } */
     #profilePic {
-        height: 400px;
+        height: 330px;
         width: 350px;
     }
     .about h1 {
@@ -141,22 +184,3 @@ i{
         padding: 0 30px;
     }
 }
-
-/* @media screen and (min-width: 1441px) {
-    .aboutUs {
-        padding: 40px;
-    }
-    #profilePic {
-        height: 450px;
-        width: 400px;
-    }
-    .about h1 {
-        font-size: 40px;
-    }
-    .two-col {
-        gap: 120px;
-    }
-    .col-one, .col-two {
-        padding: 0 50px;
-    }
-}  */

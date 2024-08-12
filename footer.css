@@ -9,7 +9,8 @@
     background-color: black;
     color: white;
     flex-wrap: wrap; 
-    padding: 10px; 
+    /* background-color: aliceblue; */
+    /* padding: 10px;  */
 }
 
 .col {
@@ -60,29 +61,54 @@ span {
 }
 
 @media screen and (max-width: 600px) {
+    body{
+        padding: 0%;
+        margin: 0%;
+    }
     .footer {
         flex-direction: column;
         background-color: black;
         height: 100%;
         width: 100%;
-        padding: 10px;
+        font-size: 14px;
+        padding: 0;
 
     }
-
-    .col, .col-one, .col-four {
-        width: 100%;
-        font-size: 12px;
+    .footer p{
         text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 500;
+        font-style: normal;
+        padding: 5px;
+    }
+    
+    .col-one{
+        width: 100%;
+        /* font-size: 12px; */
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+    .col, .col-four {
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
     }
     .icons {
         justify-content: center;
+        /* color: white; */
     }
     #icons {
         font-size: 20px;
+        color: white;
     }
     span {
         justify-content: center;
         text-align: center;
+        align-items: center;
     }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -91,7 +117,7 @@ span {
         background-color: black;
         height: 100%;
         width: 100%;
-        padding: 20px;
+        /* padding: 20px; */
     }
 
     .col-one , .col-four{
@@ -107,8 +133,10 @@ span {
     .icons {
         justify-content: center;
     }
+    
     #icons {
-        font-size: 22px;
+        font-size: 20px;
+        font-weight: 100;
     }
     span {
         justify-content: center;
@@ -120,19 +148,19 @@ span {
         flex-direction: row;
         background-color: black;
         width: 100%;
-        padding: 30px;
+        /* padding: 30px; */
     }
 
     .col-one , .col-four{
         width: 25%;
-        margin: 0;
+        margin: 10px;
         padding: 0 2%;
         text-align: left;
         font-size: 16px;
     }
     .col {
         width: 15%;
-        margin: 0;
+        margin: 10px;
         text-align: left;
     }
     .icons {
