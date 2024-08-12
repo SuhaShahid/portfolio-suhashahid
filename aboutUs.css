@@ -121,8 +121,9 @@ i{
         font-size: 18px;
     }
     .about p{
-        font-size: 14px;
+        font-size: 14px; 
     }
+    
     .two-col {
         flex-direction: column;
         gap: 20px;
@@ -150,8 +151,8 @@ i{
         /* padding: 20px; */
     }
     #profilePic {
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 300px;
     }
     .about h1 {
         font-size: 32px;

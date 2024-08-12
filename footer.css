@@ -118,6 +118,7 @@ span {
         height: 100%;
         width: 100%;
         /* padding: 20px; */
+        display: ruby-text;
     }
 
     .col-one , .col-four{
